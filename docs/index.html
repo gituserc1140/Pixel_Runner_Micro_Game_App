@@ -3,27 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gaming Micro App</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Pixel Runner</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main class="app-shell">
-      <h1>Gaming Micro App Template</h1>
-      <p class="subtitle">Replace this starter content with your game UI.</p>
+      <h1>Pixel Runner</h1>
+      <p class="subtitle">Space / Tap to jump &nbsp;|&nbsp; ↓ / Swipe down to slide</p>
 
-      <section class="play-area" aria-label="Game area">
+      <section class="play-area" aria-label="Game canvas">
+        <!-- Canvas logical size is 960×540 (16:9); CSS scales it responsively -->
         <canvas id="gameCanvas" width="960" height="540"></canvas>
       </section>
 
-      <section class="notes">
-        <h2>Next steps</h2>
-        <ul>
-          <li>Build your game loop in <code>docs/game.js</code>.</li>
-          <li>Design your HUD/menu in this file.</li>
-          <li>Adjust styles in <code>docs/styles.css</code>.</li>
-        </ul>
+      <section class="controls-info">
+        <span>🖥️ Keyboard: <strong>Space</strong> jump &nbsp; <strong>↓</strong> slide</span>
+        <span>📱 Touch: <strong>Tap</strong> jump &nbsp; <strong>Swipe Down</strong> slide</span>
       </section>
     </main>
+
+    <!-- Load modules in dependency order -->
+    <script src="./player.js"></script>
+    <script src="./obstacles.js"></script>
     <script src="./game.js"></script>
   </body>
 </html>

@@ -1,30 +1,47 @@
-# Gaming Micro App Template
+# Pixel Runner
 
-Blank starter template for building browser-based gaming microapps and deploying them to GitHub Pages.
+A simple, mobile-friendly side-scrolling auto-runner built with plain HTML, CSS, and JavaScript — no external libraries.
 
-## What this template includes
+## Controls
 
-- `docs/index.html` — starter HTML shell
-- `docs/styles.css` — base responsive styling
-- `docs/game.js` — minimal JavaScript bootstrap point
-- `index.html` — root redirect to `docs/` for local/open-in-browser convenience
+| Action | Keyboard | Mobile |
+|--------|----------|--------|
+| Jump   | `Space`  | Tap the screen |
+| Slide  | `↓` (hold) | Swipe down |
 
-## Create a new game from this template
+- **Collect gold diamonds** to increase your score.
+- **Avoid red obstacles** — colliding ends the run.
+- Speed increases over time; how far can you get?
 
-1. Click **Use this template** on GitHub.
-2. Name your new repository.
-3. Clone the new repo and replace `docs/game.js` with your game logic.
-4. Update `docs/index.html` markup and `docs/styles.css` styling as needed.
+## File Structure
+
+```
+docs/
+  index.html    — page shell, loads all scripts
+  style.css     — responsive dark-theme styles
+  player.js     — Player class: physics, jump, slide, draw
+  obstacles.js  — Obstacle & Collectible classes, collision helper
+  game.js       — Main game loop, input handling, screens
+```
 
 ## Deploy to GitHub Pages
 
-1. In your game repo, go to **Settings → Pages**.
-2. Under **Build and deployment**, choose:
+1. Push the repository to GitHub.
+2. Go to **Settings → Pages**.
+3. Under *Build and deployment* choose:
    - **Source:** Deploy from a branch
    - **Branch:** `main` (or your default branch)
    - **Folder:** `/docs`
-3. Save and wait for GitHub Pages to publish.
+4. Click **Save** and wait ~60 seconds.
 
-After publish, your app is available at:
+Your game will be live at:
 
-`https://<your-username>.github.io/<your-repo>/`
+```
+https://<your-username>.github.io/<your-repo>/
+```
+
+## Run locally
+
+Just open `docs/index.html` in any modern browser — no server needed.  
+(The root `index.html` also redirects to `docs/` for convenience.)
+
