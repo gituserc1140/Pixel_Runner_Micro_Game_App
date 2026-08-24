@@ -111,6 +111,13 @@ class Player {
   // ── Axis-aligned bounding box for collision ─────────────────
 
   getBounds() {
-    return { x: this.x + 4, y: this.y, w: this.w - 8, h: this.h };
+    const sideInset = this.sliding ? 6 : 4;
+    const topInset  = this.sliding ? 4 : 0;
+    return {
+      x: this.x + sideInset,
+      y: this.y + topInset,
+      w: this.w - sideInset * 2,
+      h: this.h - topInset
+    };
   }
 }

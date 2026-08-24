@@ -22,7 +22,8 @@ class Obstacle {
     } else if (type === "high") {
       // Tall thin block — player must slide under the gap
       this.w = 20;
-      this.h = GROUND_Y - 20;  // floor to near-top
+      const slideClearance = SLIDE_H + 8;
+      this.h = GROUND_Y - slideClearance;  // leave enough room for slide
       this.y = 0;               // starts at top
     } else {
       // "tall" — medium cactus-style
