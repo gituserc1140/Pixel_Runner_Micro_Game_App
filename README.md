@@ -2,6 +2,10 @@
 
 A simple, mobile-friendly side-scrolling auto-runner built with plain HTML, CSS, and JavaScript — no external libraries.
 
+## Sponsor me 
+
+[![Sponsor me on GitHub](https://img.shields.io/badge/Sponsor%20me%20on-GitHub-EA4AAA?logo=githubsponsors&style=flat-square)](https://github.com/sponsors/gituserc1140)
+
 ## Controls
 
 | Action | Keyboard | Mobile |
