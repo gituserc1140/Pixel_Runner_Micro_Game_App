@@ -2,6 +2,8 @@
 
 A simple, mobile-friendly side-scrolling auto-runner built with plain HTML, CSS, and JavaScript — no external libraries.
 
+[![Play on GitHub Pages](https://img.shields.io/badge/Play%20on-GitHub%20Pages-2ea44f?logo=github)](https://gituserc1140.github.io/Pixel_Runner_Micro_Game_App/)
+
 ## Sponsor me 
 
 [![Sponsor me on GitHub](https://img.shields.io/badge/Sponsor%20me%20on-GitHub-EA4AAA?logo=githubsponsors&style=flat-square)](https://github.com/sponsors/gituserc1140)
@@ -48,4 +50,3 @@ https://<your-username>.github.io/<your-repo>/
 
 Just open `docs/index.html` in any modern browser — no server needed.  
 (The root `index.html` also redirects to `docs/` for convenience.)
-
